@@ -7,16 +7,11 @@ import (
 func Day03Main() {
 	dataPath := "./Data/day03.txt"
 	data := Helper.ParseFile(dataPath)
-	println(task01(data))
-	// println('a' - 96)
-	// println('A' - 38)
-	// println("a ", 'a') // 97
-	// println("A ", 'A') // 6
-
-	println(task02(data))
+	println(backpackDuplicateChecker(data))
+	println(backpackGroupBadgeFinder(data))
 }
 
-func task01(data []string) int {
+func backpackDuplicateChecker(data []string) int {
 	var result int
 
 	var duplicates []rune
@@ -51,7 +46,7 @@ func task01(data []string) int {
 	return result
 }
 
-func task02(data []string) (result int) {
+func backpackGroupBadgeFinder(data []string) (result int) {
 
 	var dupesResult []rune
 	var firstLine string
