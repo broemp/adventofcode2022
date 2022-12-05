@@ -33,6 +33,8 @@ func main() {
 			Days.Day02Main()
 		case 3:
 			Days.Day03Main()
+		case 4:
+			Days.Day04Main()
 		default:
 			println("Day not implemented yet!")
 		}
